@@ -1,0 +1,5 @@
+We will develop a personal website for attorney Ramin beside his law firm website rtmlawfirm.com. We will develop the website using Laravel + Blade + Livewire + Alpine.js, with Tailwind CSS. The website will have dark and mode option. The website layout will be modern and sophisticated.
+
+We have already have the domain: attorneyramin.com
+
+Please develop a high label design system for his personal branding website. The design system will cover all the items such as overview, colors, typography, spacing, corner radius, shadow, layout, components, assets and so on.

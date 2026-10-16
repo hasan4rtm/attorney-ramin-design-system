@@ -1,0 +1,40 @@
+<!-- @dsCard group="Actions" height=260 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ThemeToggle — preview</title></head>
+<body>
+<div class="ar-preview" style="align-items:flex-start;gap:var(--space-10)">
+  <div class="ar-preview--stack" style="gap:var(--space-3)">
+    <span class="ar-spec">Header (desktop)</span>
+    <div class="ar-theme" role="group" aria-label="Color theme" id="tt">
+      <button type="button" data-mode="light" aria-pressed="false" aria-label="Light theme"><svg class="ar-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></button>
+      <button type="button" data-mode="dark" aria-pressed="false" aria-label="Dark theme"><svg class="ar-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg></button>
+      <button type="button" data-mode="system" aria-pressed="true" aria-label="Match system theme"><svg class="ar-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg></button>
+    </div>
+    <span class="ar-spec" style="margin-top:var(--space-4)">Mobile menu (cycles)</span>
+    <button class="ar-theme-cycle" type="button" id="cycle" aria-label="Theme: system. Switch theme."><svg class="ar-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg></button>
+  </div>
+  <div id="demo" class="ar-card" style="padding:var(--space-6);gap:var(--space-2);width:300px;background:var(--page)">
+    <span class="eyebrow ar-accent">Live sample</span>
+    <p class="display-xs">The page follows your choice.</p>
+    <p class="body-sm ar-muted">System follows the device setting and updates when it changes.</p>
+  </div>
+</div>
+<script>
+var icons = { light: "<svg class=\"ar-icon\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><circle cx=\"12\" cy=\"12\" r=\"4\" /><path d=\"M12 2v2\" /><path d=\"M12 20v2\" /><path d=\"m4.93 4.93 1.41 1.41\" /><path d=\"m17.66 17.66 1.41 1.41\" /><path d=\"M2 12h2\" /><path d=\"M20 12h2\" /><path d=\"m6.34 17.66-1.41 1.41\" /><path d=\"m19.07 4.93-1.41 1.41\" /></svg>", dark: "<svg class=\"ar-icon\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z\" /></svg>", system: "<svg class=\"ar-icon\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><rect width=\"20\" height=\"14\" x=\"2\" y=\"3\" rx=\"2\" /><line x1=\"8\" x2=\"16\" y1=\"21\" y2=\"21\" /><line x1=\"12\" x2=\"12\" y1=\"17\" y2=\"21\" /></svg>" };
+var demo = document.getElementById('demo'), group = document.getElementById('tt'), cycle = document.getElementById('cycle');
+var order = ['light', 'dark', 'system'], mode = 'system';
+var mq = window.matchMedia('(prefers-color-scheme: dark)');
+function apply(m) {
+  mode = m;
+  var resolved = m === 'system' ? (mq.matches ? 'dark' : 'light') : m;
+  if (m === 'system') demo.removeAttribute('data-theme'); else demo.setAttribute('data-theme', resolved);
+  group.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === m)); });
+  cycle.innerHTML = icons[m];
+  cycle.setAttribute('aria-label', 'Theme: ' + m + '. Switch theme.');
+}
+group.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) apply(b.dataset.mode); });
+cycle.addEventListener('click', function () { apply(order[(order.indexOf(mode) + 1) % 3]); });
+</script>
+</body>
+</html>

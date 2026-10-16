@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Attorney Ramin — design system</title>
+  <link rel="icon" href="project/assets/Logos/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      try {
+        var m = localStorage.getItem('ds-theme') || 'system';
+        var dark = m === 'dark' || (m === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="viewer/app.css">
+  <script src="viewer/vendor/marked.min.js" defer></script>
+  <script src="viewer/app.js" defer></script>
+</head>
+<body class="is-loading">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="#/overview"><span class="brand__name">Attorney Ramin</span><span class="brand__pip" aria-hidden="true"></span><span class="brand__tag">Design system</span></a>
+    <div class="top__right">
+      <div class="seg" role="group" aria-label="Color theme" id="theme">
+        <button type="button" data-mode="light">Light</button>
+        <button type="button" data-mode="dark">Dark</button>
+        <button type="button" data-mode="system">System</button>
+      </div>
+      <button class="menu-btn" type="button" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </header>
+  <div class="shell">
+    <nav class="nav" id="nav" aria-label="Design system"></nav>
+    <main class="main" id="main" tabindex="-1"><p class="muted">Loading…</p></main>
+  </div>
+  <noscript><p style="padding:24px">This design system viewer needs JavaScript.</p></noscript>
+</body>
+</html>

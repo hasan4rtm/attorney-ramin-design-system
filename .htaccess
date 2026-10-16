@@ -1,0 +1,21 @@
+# Attorney Ramin design system — static hosting (Apache / LiteSpeed shared hosting)
+Options -Indexes
+DirectoryIndex index.html
+
+AddType font/woff2 .woff2
+AddType text/markdown .md
+AddType application/json .json
+AddType image/svg+xml .svg
+AddDefaultCharset utf-8
+
+# Keep the source files out of search results
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+# Don't serve the brief or local editor settings if they get uploaded by mistake
+<IfModule mod_authz_core.c>
+  <FilesMatch "^(prompt\.txt|settings\.json)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>

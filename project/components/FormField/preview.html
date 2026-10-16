@@ -1,0 +1,18 @@
+<!-- @dsCard group="Forms" height=620 width=900 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>FormField — preview</title></head>
+<body>
+<div class="ar-preview--flush" style="padding:var(--space-10)">
+  <div class="ar-grid-2" style="gap:var(--space-6) var(--space-8)">
+    <div class="ar-field"><label class="ar-field__label" for="f1">Full name</label><input class="ar-input" id="f1" placeholder="First and last name" autocomplete="name"></div>
+    <div class="ar-field"><label class="ar-field__label" for="f2">Phone</label><input class="ar-input is-focus" id="f2" value="(714) 555-0142" inputmode="tel" autocomplete="tel"><p class="ar-field__hint">We’ll call from (855) 786-9467.</p></div>
+    <div class="ar-field is-invalid"><label class="ar-field__label" for="f3">Email <span class="ar-field__opt">Optional</span></label><input class="ar-input" id="f3" value="maria@" aria-invalid="true" aria-describedby="f3e"><p class="ar-field__error" id="f3e"><svg class="ar-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="10" /><line x1="12" x2="12" y1="8" y2="12" /><line x1="12" x2="12.01" y1="16" y2="16" /></svg>Enter a full email address, like name@example.com.</p></div>
+    <div class="ar-field"><label class="ar-field__label" for="f4">Type of case</label><div class="ar-select-wrap"><select class="ar-select" id="f4"><option>Car accident</option><option>Truck accident</option><option>Motorcycle accident</option><option>Pedestrian accident</option><option>Uber or Lyft accident</option><option>Something else</option></select><svg class="ar-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="m6 9 6 6 6-6" /></svg></div></div>
+    <div class="ar-field" style="grid-column:1/-1"><label class="ar-field__label" for="f5">What happened?</label><textarea class="ar-textarea" id="f5" placeholder="When and where it happened, and how you were hurt." aria-describedby="f5h"></textarea><p class="ar-field__hint" id="f5h">A few sentences is enough. Don’t include medical record numbers.</p></div>
+    <div class="ar-field"><label class="ar-field__label" for="f6">Case number</label><input class="ar-input" id="f6" value="Assigned after review" disabled></div>
+  </div>
+</div>
+
+</body>
+</html>

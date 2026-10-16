@@ -1,0 +1,440 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-16T12:29:38Z"
+  },
+  "title": "Attorney Ramin",
+  "namespace": "AttorneyRamin",
+  "libraries": [],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "Photography",
+    "Icons",
+    "Social"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "ramin-lockup-ink.svg",
+        "ramin-lockup-reverse.svg",
+        "ramin-wordmark-ink.svg",
+        "ramin-wordmark-reverse.svg",
+        "ramin-monogram-ink.svg",
+        "ramin-monogram-reverse.svg",
+        "ramin-avatar.svg",
+        "favicon.svg"
+      ],
+      "files": {
+        "ramin-lockup-ink.svg": {
+          "name": "ramin-lockup-ink.svg",
+          "blob": "6078fc02e9e4ee832adbcaa7dead52a9",
+          "size": 18553,
+          "type": "image/svg+xml"
+        },
+        "ramin-lockup-reverse.svg": {
+          "name": "ramin-lockup-reverse.svg",
+          "blob": "e9eb794ec026fc25e601900a394efc75",
+          "size": 18553,
+          "type": "image/svg+xml"
+        },
+        "ramin-wordmark-ink.svg": {
+          "name": "ramin-wordmark-ink.svg",
+          "blob": "9e6312ae04ac3ca30e116b0f31ea100a",
+          "size": 9562,
+          "type": "image/svg+xml"
+        },
+        "ramin-wordmark-reverse.svg": {
+          "name": "ramin-wordmark-reverse.svg",
+          "blob": "e36eb9606b42d2d811432b6eb78c57a8",
+          "size": 9562,
+          "type": "image/svg+xml"
+        },
+        "ramin-monogram-ink.svg": {
+          "name": "ramin-monogram-ink.svg",
+          "blob": "02b5cbcc6f986e509834191c1def25a7",
+          "size": 1481,
+          "type": "image/svg+xml"
+        },
+        "ramin-monogram-reverse.svg": {
+          "name": "ramin-monogram-reverse.svg",
+          "blob": "742d67f40b753672730ab6efc8446663",
+          "size": 1481,
+          "type": "image/svg+xml"
+        },
+        "ramin-avatar.svg": {
+          "name": "ramin-avatar.svg",
+          "blob": "d60e6fd6e75b0d80639e82e4e7f56848",
+          "size": 1534,
+          "type": "image/svg+xml"
+        },
+        "favicon.svg": {
+          "name": "favicon.svg",
+          "blob": "5ea4af04c1d87dadffe1ef40ddbf75f9",
+          "size": 1003,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Photography": {
+      "name": "Photography",
+      "tile": "l",
+      "order": [
+        "ramin-montakab-portrait.png"
+      ],
+      "files": {
+        "ramin-montakab-portrait.png": {
+          "name": "ramin-montakab-portrait.png",
+          "blob": "1cae6936854622b295532fb92ab1b3e7",
+          "size": 263060,
+          "type": "image/png"
+        }
+      }
+    },
+    "Icons": {
+      "name": "Icons",
+      "tile": "xs",
+      "order": [
+        "phone.svg",
+        "mail.svg",
+        "map-pin.svg",
+        "calendar.svg",
+        "clock.svg",
+        "languages.svg",
+        "arrow-right.svg",
+        "arrow-up-right.svg",
+        "chevron-down.svg",
+        "chevron-right.svg",
+        "menu.svg",
+        "x.svg",
+        "check.svg",
+        "sun.svg",
+        "moon.svg",
+        "monitor.svg",
+        "quote.svg",
+        "star.svg",
+        "play.svg",
+        "info.svg",
+        "circle-check.svg",
+        "triangle-alert.svg",
+        "circle-alert.svg",
+        "car.svg",
+        "truck.svg",
+        "motorbike.svg",
+        "bike.svg",
+        "footprints.svg",
+        "car-taxi-front.svg",
+        "wine.svg",
+        "dog.svg",
+        "brain.svg",
+        "baby.svg",
+        "package-x.svg",
+        "hand-heart.svg",
+        "award.svg",
+        "shield-check.svg",
+        "graduation-cap.svg",
+        "newspaper.svg",
+        "mic.svg",
+        "linkedin.svg",
+        "instagram.svg",
+        "youtube.svg",
+        "facebook.svg"
+      ],
+      "files": {
+        "phone.svg": {
+          "name": "phone.svg",
+          "blob": "9fcde52b78933b5da868f3ebf128f5f0",
+          "size": 515,
+          "type": "image/svg+xml"
+        },
+        "mail.svg": {
+          "name": "mail.svg",
+          "blob": "f6d517e911d18204e0b417d0525b321f",
+          "size": 325,
+          "type": "image/svg+xml"
+        },
+        "map-pin.svg": {
+          "name": "map-pin.svg",
+          "blob": "f33d97f7803b83a6d3b8506561ac9a60",
+          "size": 371,
+          "type": "image/svg+xml"
+        },
+        "calendar.svg": {
+          "name": "calendar.svg",
+          "blob": "12a71daa30fc2eacdce0fd7e2a20cc5a",
+          "size": 345,
+          "type": "image/svg+xml"
+        },
+        "clock.svg": {
+          "name": "clock.svg",
+          "blob": "d29c5c60c522e7e503a5c0e732812a5a",
+          "size": 299,
+          "type": "image/svg+xml"
+        },
+        "languages.svg": {
+          "name": "languages.svg",
+          "blob": "eaacd2ee69fd295487a0ab519b3f82f7",
+          "size": 382,
+          "type": "image/svg+xml"
+        },
+        "arrow-right.svg": {
+          "name": "arrow-right.svg",
+          "blob": "5d9c9eefff942e32bafd5515e5702f99",
+          "size": 275,
+          "type": "image/svg+xml"
+        },
+        "arrow-up-right.svg": {
+          "name": "arrow-up-right.svg",
+          "blob": "1a8bac9da0e0789b3808ffdcdb3a345c",
+          "size": 277,
+          "type": "image/svg+xml"
+        },
+        "chevron-down.svg": {
+          "name": "chevron-down.svg",
+          "blob": "8e8fb12a6b4493cedb0014485e73d1e6",
+          "size": 249,
+          "type": "image/svg+xml"
+        },
+        "chevron-right.svg": {
+          "name": "chevron-right.svg",
+          "blob": "5e0a52bd896ab9d159e82287c8e0b0ca",
+          "size": 251,
+          "type": "image/svg+xml"
+        },
+        "menu.svg": {
+          "name": "menu.svg",
+          "blob": "0e3ea423a25cd714874e32a8b9c066fc",
+          "size": 341,
+          "type": "image/svg+xml"
+        },
+        "x.svg": {
+          "name": "x.svg",
+          "blob": "bb377317e54abf138a5a87ad26148cc9",
+          "size": 264,
+          "type": "image/svg+xml"
+        },
+        "check.svg": {
+          "name": "check.svg",
+          "blob": "3a4c226e04aa935dbfac046ba2d1abc0",
+          "size": 245,
+          "type": "image/svg+xml"
+        },
+        "sun.svg": {
+          "name": "sun.svg",
+          "blob": "e544e28b530556751f1fc68c37c2f06d",
+          "size": 507,
+          "type": "image/svg+xml"
+        },
+        "moon.svg": {
+          "name": "moon.svg",
+          "blob": "8377d39f67064417ff41c82521cbe550",
+          "size": 263,
+          "type": "image/svg+xml"
+        },
+        "monitor.svg": {
+          "name": "monitor.svg",
+          "blob": "3f143ab39f4231e7247b06e4e83a4695",
+          "size": 358,
+          "type": "image/svg+xml"
+        },
+        "quote.svg": {
+          "name": "quote.svg",
+          "blob": "8f81c0c48548672704c2f833a90ba581",
+          "size": 499,
+          "type": "image/svg+xml"
+        },
+        "star.svg": {
+          "name": "star.svg",
+          "blob": "535ac32126262379d22ea95b09146ee5",
+          "size": 593,
+          "type": "image/svg+xml"
+        },
+        "play.svg": {
+          "name": "play.svg",
+          "blob": "df53ccf67fe188edd1dc0437822ee88e",
+          "size": 258,
+          "type": "image/svg+xml"
+        },
+        "info.svg": {
+          "name": "info.svg",
+          "blob": "f2c872fc3bdb1c62bf3aa502369f8712",
+          "size": 305,
+          "type": "image/svg+xml"
+        },
+        "circle-check.svg": {
+          "name": "circle-check.svg",
+          "blob": "0e92d8e2dabac79974d331d7c8eda06e",
+          "size": 290,
+          "type": "image/svg+xml"
+        },
+        "triangle-alert.svg": {
+          "name": "triangle-alert.svg",
+          "blob": "af28aa4d8c334e9131fc94234f766097",
+          "size": 364,
+          "type": "image/svg+xml"
+        },
+        "circle-alert.svg": {
+          "name": "circle-alert.svg",
+          "blob": "0fa04109e042c257d69df947c0839608",
+          "size": 351,
+          "type": "image/svg+xml"
+        },
+        "car.svg": {
+          "name": "car.svg",
+          "blob": "965bcbf8f17d50ae1bf3e94a1e8689b8",
+          "size": 500,
+          "type": "image/svg+xml"
+        },
+        "truck.svg": {
+          "name": "truck.svg",
+          "blob": "b367ce9b653b9ec5760b39582a17a9f8",
+          "size": 487,
+          "type": "image/svg+xml"
+        },
+        "motorbike.svg": {
+          "name": "motorbike.svg",
+          "blob": "ccb6c3168d5e0e85823e890a87d4e33c",
+          "size": 440,
+          "type": "image/svg+xml"
+        },
+        "bike.svg": {
+          "name": "bike.svg",
+          "blob": "ba5095eb0a61041041d83e667ab59812",
+          "size": 382,
+          "type": "image/svg+xml"
+        },
+        "footprints.svg": {
+          "name": "footprints.svg",
+          "blob": "8b73980dd037620f82abc0628e613e23",
+          "size": 537,
+          "type": "image/svg+xml"
+        },
+        "car-taxi-front.svg": {
+          "name": "car-taxi-front.svg",
+          "blob": "ac8dd40c1e6aa139a13ccca852d219a6",
+          "size": 496,
+          "type": "image/svg+xml"
+        },
+        "wine.svg": {
+          "name": "wine.svg",
+          "blob": "8a4fa3a6412cfa69659ebc6130607f33",
+          "size": 371,
+          "type": "image/svg+xml"
+        },
+        "dog.svg": {
+          "name": "dog.svg",
+          "blob": "503c56d6fc4844b0662ce99d4a6b9886",
+          "size": 723,
+          "type": "image/svg+xml"
+        },
+        "brain.svg": {
+          "name": "brain.svg",
+          "blob": "5908a1a61a712b1b9cf66398e6ceeb0d",
+          "size": 768,
+          "type": "image/svg+xml"
+        },
+        "baby.svg": {
+          "name": "baby.svg",
+          "blob": "b46d8cf03b0429fd3bcd8c1073ea3fff",
+          "size": 478,
+          "type": "image/svg+xml"
+        },
+        "package-x.svg": {
+          "name": "package-x.svg",
+          "blob": "950cfe2f50355bdd5df6e5839c78667a",
+          "size": 508,
+          "type": "image/svg+xml"
+        },
+        "hand-heart.svg": {
+          "name": "hand-heart.svg",
+          "blob": "20813a4c08300fecbc0aac63367e5918",
+          "size": 536,
+          "type": "image/svg+xml"
+        },
+        "award.svg": {
+          "name": "award.svg",
+          "blob": "187d88c9af7537e9edec92f2efae3c01",
+          "size": 386,
+          "type": "image/svg+xml"
+        },
+        "shield-check.svg": {
+          "name": "shield-check.svg",
+          "blob": "50d373b23f253bb7d600730950a85963",
+          "size": 430,
+          "type": "image/svg+xml"
+        },
+        "graduation-cap.svg": {
+          "name": "graduation-cap.svg",
+          "blob": "0fb71a5629f1072695d8482df94dc395",
+          "size": 431,
+          "type": "image/svg+xml"
+        },
+        "newspaper.svg": {
+          "name": "newspaper.svg",
+          "blob": "56c585594e0afa9d4cf53d35204abcf2",
+          "size": 430,
+          "type": "image/svg+xml"
+        },
+        "mic.svg": {
+          "name": "mic.svg",
+          "blob": "3227218edd6bfb66f1d521c889384ccd",
+          "size": 369,
+          "type": "image/svg+xml"
+        },
+        "linkedin.svg": {
+          "name": "linkedin.svg",
+          "blob": "f97fd4a8df59b4c944ba34511d300b40",
+          "size": 395,
+          "type": "image/svg+xml"
+        },
+        "instagram.svg": {
+          "name": "instagram.svg",
+          "blob": "cc22dc810b39848098de5140b009e890",
+          "size": 395,
+          "type": "image/svg+xml"
+        },
+        "youtube.svg": {
+          "name": "youtube.svg",
+          "blob": "ddc5ef2ddd2d5982a12bfee785be1299",
+          "size": 438,
+          "type": "image/svg+xml"
+        },
+        "facebook.svg": {
+          "name": "facebook.svg",
+          "blob": "adfbfeea1ff7b161f5ce7c248695e182",
+          "size": 298,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Social": {
+      "name": "Social",
+      "tile": "l",
+      "order": [
+        "og-default.png"
+      ],
+      "files": {
+        "og-default.png": {
+          "name": "og-default.png",
+          "blob": "77c3ec2f979e150faf3a3ddbd799172c",
+          "size": 359688,
+          "type": "image/png"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-10-16T12:29:38Z",
+    "via": "Claude Code",
+    "note": "First version: brand book, tokens, fonts, 26 components, logos, portrait, icons, social image."
+  }
+}

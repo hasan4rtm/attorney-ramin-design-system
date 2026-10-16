@@ -1,0 +1,27 @@
+{
+  "sections": [
+    "README.md",
+    "guide/01-voice.md",
+    "guide/02-color.md",
+    "guide/03-typography.md",
+    "guide/04-layout.md",
+    "guide/05-shape-elevation.md",
+    "guide/06-motion.md",
+    "guide/07-photography.md",
+    "guide/08-accessibility.md",
+    "guide/09-advertising.md",
+    "guide/10-laravel.md",
+    "guide/11-pages.md"
+  ],
+  "cover": "Cover",
+  "components": [
+    "Logo",
+    "Button", "TextLink", "ThemeToggle",
+    "SiteHeader", "MobileMenu", "SiteFooter", "Breadcrumbs",
+    "Hero", "SectionHeader", "CtaBand",
+    "PracticeAreaCard", "CaseResultCard", "Testimonial", "CredentialBar", "InsightCard",
+    "ArticleByline", "Timeline", "FaqAccordion", "OfficeCard", "Badge",
+    "FormField", "Checkbox", "ConsultationForm",
+    "Alert", "Disclaimer"
+  ]
+}
