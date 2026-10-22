@@ -15,6 +15,10 @@ project/         (the design system itself)
 
 Then open `https://attorneyramin.com/design-system/`. All paths are relative, so any folder name works, including the domain root. Don’t upload `prompt.txt`, `RAMIN-T.png` or `viewer/.vscode`; they aren’t needed.
 
+## Publishing an update
+
+Browsers cache CSS, JavaScript, fonts and images, so a visitor could keep seeing an old version after you upload a new one. `index.html` carries a cache key, `?v=1.1.0`, on its four `<link>` and `<script>` tags; `viewer/app.js` reads the key from its own tag and adds it to every file it loads (`bundle.css`, the fonts, logos, photos and icons). After uploading a change, raise the number on all four tags in `index.html` (for example to `?v=1.1.1`) and upload `index.html` too; every visitor then gets the new files without clearing their cache. The HTML, JSON and Markdown need no key: `.htaccess` tells browsers to revalidate them on every visit.
+
 ## Run it on your computer
 
 It needs a web server (browsers block the file reads when you double-click `index.html`). Any of these work from the `design-system` folder:

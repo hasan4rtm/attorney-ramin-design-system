@@ -13,6 +13,14 @@ AddDefaultCharset utf-8
   Header set X-Robots-Tag "noindex, nofollow"
 </IfModule>
 
+# Browsers revalidate the HTML, JSON and Markdown on every visit; the CSS, JavaScript, fonts and images
+# are cached by URL instead, with the ?v= key that index.html carries (raise it when publishing a change)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|json|md)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
 # Don't serve the brief or local editor settings if they get uploaded by mistake
 <IfModule mod_authz_core.c>
   <FilesMatch "^(prompt\.txt|settings\.json)$">

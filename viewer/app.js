@@ -6,6 +6,9 @@
   const main = $('#main'), nav = $('#nav');
   const state = { mode: 'system', tokens: null, index: null, tokensCss: '', blobs: {}, sections: [], components: [], cover: null };
   const abs = (p) => new URL(p, location.href).href;
+  // Cache key: the ?v= on this script's tag in index.html. Bump it there and every file the viewer loads gets the new key.
+  const VERSION = (() => { try { return new URL(document.currentScript.src).searchParams.get('v') || ''; } catch { return ''; } })();
+  const versioned = (url) => (VERSION ? `${url}${url.includes('?') ? '&' : '?'}v=${encodeURIComponent(VERSION)}` : url);
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const tick = (s) => esc(s).replace(/`([^`]+)`/g, '<code>$1</code>');
   const md = (text) => (window.marked ? window.marked.parse(text) : `<pre>${esc(text)}</pre>`);
@@ -15,7 +18,7 @@
   const files = new Map();
   function get(path, type = 'text') {
     if (files.has(path)) return files.get(path);
-    const p = fetch(path, { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error(`${path} (${r.status})`); return type === 'json' ? r.json() : r.text(); });
+    const p = fetch(versioned(path), { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error(`${path} (${r.status})`); return type === 'json' ? r.json() : r.text(); });
     files.set(path, p);
     p.catch(() => files.delete(path));
     return p;
@@ -28,7 +31,7 @@
     const val = (v, th) => (typeof v === 'string' ? v : v[th] ?? v[first]);
     const ref = (s) => (s.startsWith('{') ? `var(--${e(s.slice(1, -1))})` : s);
     let css = '';
-    for (const f of T.type.fonts) css += `@font-face{font-family:"${f.family}";src:url("${abs('project/' + f.file)}") format("woff2");font-weight:${f.weight};font-style:${f.style || 'normal'};font-display:swap}\n`;
+    for (const f of T.type.fonts) css += `@font-face{font-family:"${f.family}";src:url("${versioned(abs('project/' + f.file))}") format("woff2");font-weight:${f.weight};font-style:${f.style || 'normal'};font-display:swap}\n`;
     const themed = [...T.color.tokens, ...((T.shadow && T.shadow.tokens) || [])];
     css += `:root, [data-theme="${first}"] {\n` + themed.map((t) => `  --${e(t.name)}: ${ref(val(t.value, first))};`).join('\n') + '\n}\n';
     for (const th of T.color.themes.slice(1)) {
@@ -68,7 +71,7 @@
     let html = c.html.replace(/^<!--\s*@dsCard[^>]*-->\s*/, '');
     html = html.replace(/\/_blob\/([0-9a-f]{32})/g, (m, id) => state.blobs[id] || m);
     html = html.replace(/<html([^>]*)>/i, (m, a) => `<html${a.replace(/\sdata-theme="[^"]*"/, '')} data-theme="${resolved()}">`);
-    const inject = `<style>${state.tokensCss}</style><link rel="stylesheet" href="${abs('project/components/bundle.css')}">` +
+    const inject = `<style>${state.tokensCss}</style><link rel="stylesheet" href="${versioned(abs('project/components/bundle.css'))}">` +
       '<script>document.addEventListener("click",function(e){if(e.target.closest("a[href]"))e.preventDefault()},true)<\/script>';
     return /<head[^>]*>/i.test(html) ? html.replace(/<head([^>]*)>/i, `<head$1>${inject}`) : inject + html;
   }
@@ -237,7 +240,7 @@
       const style = document.createElement('style'); style.id = 'ds-tokens'; style.textContent = state.tokensCss;
       document.head.insertBefore(style, document.head.querySelector('link[rel=stylesheet]'));
       for (const [group, g] of Object.entries(index.assetGroups || {})) {
-        for (const f of Object.values(g.files || {})) state.blobs[f.blob] = abs(`project/assets/${encodeURIComponent(group)}/${f.name.split('/').map(encodeURIComponent).join('/')}`);
+        for (const f of Object.values(g.files || {})) state.blobs[f.blob] = versioned(abs(`project/assets/${encodeURIComponent(group)}/${f.name.split('/').map(encodeURIComponent).join('/')}`));
       }
       state.sections = await Promise.all(catalog.sections.map(async (p, i) => {
         const text = await get('project/' + p).catch(() => `# ${p}\n\nThis file is missing.`);
