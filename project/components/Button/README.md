@@ -1,7 +1,7 @@
 # Button
-Buttons start an action or go to the consultation form; the claret primary appears once per view, for the thing the page is for.
+Buttons start an action or go to the consultation form; the vermilion primary appears once per view, for the thing the page is for.
 
-**Use** `primary` for “Request a free consultation” and form submits, `secondary` for the phone call and second actions, `ghost` for low-emphasis actions inside cards and toolbars. **Don’t** put two primaries side by side, use claret for destructive actions, or write labels longer than five words.
+**Use** `primary` for “Request a free consultation” and form submits, `secondary` for the phone call and second actions, `ghost` for low-emphasis actions inside cards and toolbars. **Don’t** put two primaries side by side, use vermilion for destructive actions, or write labels longer than five words.
 
 ## Blade
 ```blade

@@ -421,7 +421,7 @@
         "og-default.png": {
           "name": "og-default.png",
           "blob": "77c3ec2f979e150faf3a3ddbd799172c",
-          "size": 359688,
+          "size": 299303,
           "type": "image/png"
         }
       }
@@ -433,8 +433,8 @@
   },
   "lastChange": {
     "by": "Claude",
-    "at": "2026-10-16T12:29:38Z",
+    "at": "2026-10-22T16:29:40Z",
     "via": "Claude Code",
-    "note": "First version: brand book, tokens, fonts, 26 components, logos, portrait, icons, social image."
+    "note": "Accent moved from claret to vermilion (#F53003, hover #C42602) at Ramin’s request; danger shifted to crimson; logos and social image recolored; contrast tables redone."
   }
 }

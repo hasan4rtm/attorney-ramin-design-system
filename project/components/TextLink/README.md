@@ -1,7 +1,7 @@
 # TextLink
-Inline links are `ink` text with a 1px claret underline; arrow links are claret labels that move the reader to the next page.
+Inline links are `ink` text with a 1px vermilion underline; arrow links are vermilion labels that move the reader to the next page.
 
-**Use** inline links inside paragraphs and legal text, arrow links at the end of a section or card (“Read Ramin’s story →”). Use the up-right arrow only for links that leave attorneyramin.com (rtmlawfirm.com, Google Maps). **Don’t** color whole paragraphs claret, underline headings, or use “Learn more” more than once per section.
+**Use** inline links inside paragraphs and legal text, arrow links at the end of a section or card (“Read Ramin’s story →”). Use the up-right arrow only for links that leave attorneyramin.com (rtmlawfirm.com, Google Maps). **Don’t** color whole paragraphs vermilion, underline headings, or use “Learn more” more than once per section.
 
 ## Blade
 ```blade

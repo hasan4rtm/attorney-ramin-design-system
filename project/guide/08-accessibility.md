@@ -4,7 +4,7 @@ Target: **WCAG 2.2 AA** in both themes, tested before launch with keyboard only,
 
 ## Built into the tokens
 
-- Every text pair named in a usage note meets 4.5:1 in light and dark; control borders and focus rings meet 3:1. See the contrast table in Color.
+- Every text pair named in a usage note meets 4.5:1 in light and dark, with one documented exception, the white label on the resting primary button (3.96:1; see Contrast in Color for the two ways to close it); control borders and focus rings meet 3:1.
 - Status is never color alone: each Alert, field error and badge carries an icon and words.
 - The smallest text is 13px (`caption`); body text is 16px and inputs are 16px so iOS does not zoom.
 

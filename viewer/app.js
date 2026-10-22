@@ -131,10 +131,10 @@
     const raw = (v, th) => (typeof v === 'string' ? v : (v[th] ?? v[l]));
     const card = (t) => `<div class="sw"><div class="sw__chips"><span style="background:${res(t.value, l)}"></span><span style="background:${res(t.value, d)}"></span></div>
       <div class="sw__body"><div class="sw__name">${esc(t.name)}</div><div class="sw__vals">${esc(raw(t.value, l))} · ${esc(raw(t.value, d))}</div><div class="sw__use">${tick(t.usage || '')}</div></div></div>`;
-    const prim = (n) => /^(navy|claret|pewter)-/.test(n);
+    const prim = (n) => /^(navy|vermilion|pewter)-/.test(n);
     return head('Foundations', 'Colors', 'Each card shows the light value (left) and the dark value (right). Components use the semantic tokens; primitives feed them.') +
       '<h2 class="h-sec">Semantic</h2><div class="swatches">' + T.color.tokens.filter((t) => !prim(t.name)).map(card).join('') + '</div>' +
-      ['navy', 'claret', 'pewter'].map((s) => `<h2 class="h-sec">${s[0].toUpperCase() + s.slice(1)}</h2><div class="swatches">` + T.color.tokens.filter((t) => t.name.startsWith(s + '-')).map(card).join('') + '</div>').join('');
+      ['navy', 'vermilion', 'pewter'].map((s) => `<h2 class="h-sec">${s[0].toUpperCase() + s.slice(1)}</h2><div class="swatches">` + T.color.tokens.filter((t) => t.name.startsWith(s + '-')).map(card).join('') + '</div>').join('');
   }
 
   function pageType() {

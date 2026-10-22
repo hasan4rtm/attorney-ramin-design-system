@@ -2,11 +2,11 @@ The personal brand system for **Ramin Montakab**, Principal Attorney at RTM Law,
 
 ## The idea: tailored counsel
 
-Everything comes from the portrait. Ramin wears a midnight-navy suit, a white shirt and a claret tie with a small square foulard pattern. The system turns those three into its palette and its one ornament:
+Everything comes from the portrait. Ramin wears a midnight-navy suit, a white shirt and a deep red foulard tie, with a brighter red pocket square. The system turns suit, shirt and tie into its palette and its one ornament:
 
 - **Navy** (the suit) is the ground of authority: headers of bands, the footer, the dark theme.
 - **Porcelain** (the shirt) is the light ground: clean, cool, quiet.
-- **Claret** (the tie) is the one point of conviction: the primary action, links, the pip. Like a tie, it is narrow and there is only one.
+- **Vermilion** (the tie’s red, cut as bright as the pocket square) is the one point of conviction: the primary action, links, the pip. Like a tie, it is narrow and there is only one.
 - **The pip** is the tie’s square dot. It is the full stop in the wordmark, the bullet before an eyebrow, the marker on the current timeline item, and, once per page, a field of pips in the CtaBand.
 
 Type is American and legal: **Libre Caslon** (Caslon was the face of the first printed Declaration of Independence) for headlines and the human voice, **Libre Franklin** (after Franklin Gothic, the American newspaper sans) for plain-spoken interface text.
@@ -14,10 +14,10 @@ Type is American and legal: **Libre Caslon** (Caslon was the face of the first p
 ## Principles
 
 1. **Calm over loud.** Personal injury advertising shouts. This site doesn’t: no all-caps urgency, no flashing phone numbers, no “Call now!”. Confidence shows in space and restraint.
-2. **One claret moment per view.** If two things on screen are claret fills, one of them is wrong.
+2. **One vermilion moment per view.** If two things on screen are vermilion fills, one of them is wrong.
 3. **Evidence, not adjectives.** Name the recognition and its years, the verified amount and its county, the statute and its section. Never “best”, “top”, “expert” or “aggressive”.
 4. **Personal and plain.** First person, short sentences, legal terms explained the first time they appear.
-5. **Both themes are first-class.** Every pairing meets WCAG 2.2 AA in light and in dark; dark is midnight navy, never grey.
+5. **Both themes are first-class.** Every pairing meets WCAG 2.2 AA in light and in dark, with one documented exception for text, the white label on the resting primary button (see Color); dark is midnight navy, never grey.
 
 ## Rules for building a page
 
@@ -26,8 +26,8 @@ Type is American and legal: **Libre Caslon** (Caslon was the face of the first p
 - Set headlines and body in `ink`, secondary text in `ink-muted`, dates and captions in `ink-subtle`. Nothing smaller than 13px goes below `ink-subtle`.
 - Fill the one primary action with `accent` and label it with `on-accent`. Use `accent-ink` for inline link underlines, eyebrows, quote marks and active-nav bars, never for paragraphs.
 - Navy bands use `brand` (footer `brand-deep`) with `on-brand` / `on-brand-muted` text, `line-brand` rules and `focus-on-brand` rings. Primary buttons on navy switch to `accent-on-brand`.
-- Status colors (`success`, `warning`, `danger`, `info` and their `-soft` grounds) only mean status, always with an icon and words. `danger` is a warm vermilion, deliberately different from claret.
-- Never write a hex value in a component. Use the semantic tokens; primitives (`navy-*`, `claret-*`, `pewter-*`) exist for the semantic layer and for illustrations.
+- Status colors (`success`, `warning`, `danger`, `info` and their `-soft` grounds) only mean status, always with an icon and words. `danger` is a cool crimson, deliberately different from the vermilion accent.
+- Never write a hex value in a component. Use the semantic tokens; primitives (`navy-*`, `vermilion-*`, `pewter-*`) exist for the semantic layer and for illustrations.
 
 **Type**
 - Headlines in the `display-*` styles (Libre Caslon Display, weight 400). Never bold, never all caps, never letter-spaced open.
@@ -66,7 +66,7 @@ Every case result carries “Past results do not guarantee a similar outcome.”
 
 ## Logo
 
-The wordmark is new with this system; no personal mark existed. It is “Ramin Montakab” in Libre Caslon Display, converted to outlines, with the claret pip as its full stop. Variants: wordmark, lockup with “ATTORNEY AT LAW” in Libre Franklin 600 at +0.26em, and the RM monogram. Keep clear space equal to the cap height. Render it inline (`<x-logo>`) so the letters take `ink` or `on-brand` and the pip takes `pip` or `pip-on-brand`; the files in `assets/Logos` are pre-colored for email, PDFs and profiles. The favicon is the R with its pip on a navy square.
+The wordmark is new with this system; no personal mark existed. It is “Ramin Montakab” in Libre Caslon Display, converted to outlines, with the vermilion pip as its full stop. Variants: wordmark, lockup with “ATTORNEY AT LAW” in Libre Franklin 600 at +0.26em, and the RM monogram. Keep clear space equal to the cap height. Render it inline (`<x-logo>`) so the letters take `ink` or `on-brand` and the pip takes `pip` or `pip-on-brand`; the files in `assets/Logos` are pre-colored for email, PDFs and profiles. The favicon is the R with its pip on a navy square.
 
 ## Photography
 

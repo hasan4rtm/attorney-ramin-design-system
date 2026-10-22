@@ -1,7 +1,7 @@
 # SiteHeader
 The sticky top bar: wordmark, five destinations, Español, the theme toggle and the consultation button.
 
-**Use** on every page. Nav order is fixed: About, Practice areas, Results, Insights, Contact. **Don’t** add a sixth item, put the phone number in claret, or make the header transparent over photos (it sits on `page`).
+**Use** on every page. Nav order is fixed: About, Practice areas, Results, Insights, Contact. **Don’t** add a sixth item, put the phone number in vermilion, or make the header transparent over photos (it sits on `page`).
 
 ## Blade
 ```blade

@@ -2,7 +2,7 @@
 
 ## The portrait
 
-`assets/Photography/ramin-montakab-portrait.png` is a 455×488 transparent cut-out: navy suit, white shirt, claret foulard tie, red pocket square. It is the source of the palette and appears in the Hero, the ArticleByline avatar and the social image.
+`assets/Photography/ramin-montakab-portrait.png` is a 455×488 transparent cut-out: navy suit, white shirt, deep red foulard tie, brighter red pocket square. It is the source of the palette (the vermilion accent is the tie’s red at the pocket square’s brightness) and appears in the Hero, the ArticleByline avatar and the social image.
 
 - Always place it on the **portrait panel**: `radial-gradient(120% 80% at 50% 30%, portrait-glow, portrait 62%)`. In light that is white into pewter-100; in dark, navy-600 into navy-800, which keeps the suit’s edge visible against the midnight page.
 - Anchor it to the bottom edge of the panel, never floating. Crop at the torso; never crop the head.
@@ -12,7 +12,7 @@
 ## Commissioning new photography
 
 - **Subject**: Ramin at work: reviewing a file, talking with a client (consented), walking outside the Santa Ana office on N Broadway, in a deposition-room setting. Real places he uses.
-- **Wardrobe**: the navy suit; white or pale blue shirt; claret or burgundy tie. It keeps the photographs inside the palette.
+- **Wardrobe**: the navy suit; white or pale blue shirt; a red tie, deep or bright. It keeps the photographs inside the palette.
 - **Light**: natural window light or soft key light, warm-neutral white balance, real shadows. No ring-light glare.
 - **Backgrounds**: architectural Southern California (stucco, palms in soft focus, office glass) or a seamless mid-grey for cut-outs.
 - **Crops**: 4:5 portraits, 3:2 environmental, 16:10 for Insights covers.
@@ -27,7 +27,7 @@ Use real photographs of the subject (a freeway interchange for a car-accident ar
 
 ## Alt text
 
-Describe what matters to the page: “Ramin Montakab in a navy suit and claret tie” for the hero portrait. Decorative images (the fallback panel, the pip pattern) get `alt=""` or `aria-hidden="true"`. The byline avatar is decorative because the name is next to it.
+Describe what matters to the page: “Ramin Montakab in a navy suit and red tie” for the hero portrait. Decorative images (the fallback panel, the pip pattern) get `alt=""` or `aria-hidden="true"`. The byline avatar is decorative because the name is next to it.
 
 ## Social image
 

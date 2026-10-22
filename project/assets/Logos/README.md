@@ -1,9 +1,9 @@
 # Logos
 
-New with this system: “Ramin Montakab” in Libre Caslon Display, converted to outlines, with the claret pip as its full stop. In the site, render them inline through `<x-logo>` so the ink follows the theme; use these pre-colored files where CSS can’t reach (email signatures, PDFs, Google Business Profile, slide decks).
+New with this system: “Ramin Montakab” in Libre Caslon Display, converted to outlines, with the vermilion pip as its full stop. In the site, render them inline through `<x-logo>` so the ink follows the theme; use these pre-colored files where CSS can’t reach (email signatures, PDFs, Google Business Profile, slide decks).
 
-- `ramin-wordmark-ink.svg` — wordmark for light grounds. Ink `#0E1A30` (`ink`), pip `#861E3B` (`pip`).
-- `ramin-wordmark-reverse.svg` — wordmark for navy grounds. Ink `#F4F6FA` (`on-brand`), pip `#D4677F` (`pip-on-brand`).
+- `ramin-wordmark-ink.svg` — wordmark for light grounds. Ink `#0E1A30` (`ink`), pip `#F53003` (`pip`).
+- `ramin-wordmark-reverse.svg` — wordmark for navy grounds. Ink `#F4F6FA` (`on-brand`), pip `#F53003` (`pip-on-brand`, the same vermilion: it holds 3:1 on navy).
 - `ramin-lockup-ink.svg` — wordmark over “ATTORNEY AT LAW” (Libre Franklin 600, +0.26em, `#475266`). Footer, letterhead, print.
 - `ramin-lockup-reverse.svg` — the lockup for navy grounds; descriptor `#B8C4DA`.
 - `ramin-monogram-ink.svg` — RM with pip, 128px square box, transparent. Small placements on light grounds.
